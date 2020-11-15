@@ -1,0 +1,18 @@
+# You must put this in ~/.ssh
+# you can customize the filenames
+
+Host *
+ ServerAliveInterval 25
+ #ServerAliveCountMax 20
+
+Host github.com
+ IdentityFile ~/.ssh/github
+
+Host github.corp.ebay.com
+ IdentityFile ~/.ssh/work
+
+Host cloudjump
+ IdentityFile ~/.ssh/work
+
+Host *.corp.ebay.com
+ IdentityFile ~/.ssh/work
